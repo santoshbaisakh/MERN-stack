@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg,lightskyblue,aqua,violet);
+        }
+        .container{
+            width: 420px;
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,.25);
+        }
+        .container{
+            text-align: center;
+            margin-bottom: 25px;
+            color: darkgray;
+        }
+        label{
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: lightskyblue;
+        }
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        select{
+            width: 100%;
+            padding: 12px;
+            border: 2px solid brown;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 3s;
+        }
+        input:focus,
+        select:focus{
+            outline: none;
+            border-color: chocolate;
+            box-shadow: 0 0 8px rgba(79,172,254,4);
+        }
+        .gender{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .gender label{
+            font-weight: normal;
+        }
+        button{
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg,lightskyblue,purple);
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 3s;
+        }
+        button:hover{
+            transform: translate(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student Registration</h2>
+        <form action="/Submit">
+            <label for="Name">Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Enter your Email">
+
+            <label for="Mob">Mobile No</label>
+            <input type="tel" placeholder="Enter your mobile number">
+
+            <label for="Gender">Gender</label>
+            <div class="gender">
+                <label for="male"><input type="radio" name="gender">Male</label>
+                <label for="female"><input type="radio" name="gender">Female</label>
+                <label for="others"><input type="radio" name="gender">Others</label>
+            </div>
+            <label for="department">Department</label>
+            <select name="department" id="department">
+                <option value="mca">MCA</option>
+                <option value="bca">BCA</option>
+                <option value="cse">CSE</option>
+                <option value="mech">MECH</option>
+                <option value="m-tech">M-TECH</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
