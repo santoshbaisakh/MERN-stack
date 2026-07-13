@@ -1025,3 +1025,62 @@ Status code of Node JS :-
 - 500 -> Internal server error
 - 502 -> Bad gateway
 - 504 -> gateway timeout
+
+React JS :-
+
+- React JS is a frontend javascript library.
+- React was developed by facebook by software engineer jordan walke.
+- React is also known as react js or ReactJS.
+- Basically react is a tool for building UI (user interface) components.
+
+NPX :-
+
+- npx stands for node package execute.
+- purpose -> it is an npm package runner bundled automatically with npm.
+- function -> it allows you to run & execute javascript package directly from the npm, without needing to install them permanently.
+- Storage -> it download the package to a temporary cache memory, execute the command & clear it up right after.
+
+NPM :- 
+
+- npm stands for node package manager.
+- purpose -> it is the default package manager for node js.
+- function -> it installs, updates, & deletes javascript packages and dependencies for our project.
+- storage -> it saves package permanently either locally inside our project's "node modules" folder or globally on our system.
+
+React js History :-
+
+- latest version of react js is 19.2.7
+- initial release to the public was in july 2013.
+- React js was 1st used in 2011 for facebook's newsfeed features.
+- Initially react gained lots of hate for the mix of JavaScript + HTML but in later stage or now these days 45% of software developer used react js as the core library for software development.
+- ".jsx" is the extension of react js.
+- jsx stands for 'javascript XML' means javascript + html.
+
+-----------------------------------------------------------------------------------------------------------
+
+- when you are installing react it will have multiple way to install and setup but there are two common way that we are using react js is...
+
+1. CRA (create-react-app)
+2. Vite (fastest way to install react js)
+
+File Structure of a React js folder :-
+
+1. readme.md ->
+
+- we will use readme.md for write some description or outline of our project.
+
+2. package.json ->
+
+- it will keep scripts, versions details & dependency of our project.
+
+3. package-lock.json ->
+
+- it basically store dependency of package.json file.
+
+4. .gitignore ->
+
+- files & folders ignored by git tracking...
+
+5. src (source folder) ->
+
+- it is the main source folder where we can create file & write code in it.
