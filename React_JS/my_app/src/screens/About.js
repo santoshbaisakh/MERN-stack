@@ -13,7 +13,9 @@ const About = () => {
             <Title demo="Get discounts" />
             <Title weather="rainy night" />
             <Greetings name="Satya" />
-            <UserCard name="Shiva" Age="23" City="Bhubaneswar" />
+            <UserCard name="Shiva" age="23" city="Bhubaneswar" />
+            {/* <UserCard age = "23" />
+            <UserCard city = "Bhubaneswar" /> */}
             <Button label="Submit" />
             <Button />
             <Unordered />

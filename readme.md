@@ -1026,6 +1026,20 @@ Status code of Node JS :-
 - 502 -> Bad gateway
 - 504 -> gateway timeout
 
+Closure in JavaScript :-
+
+- A closure is the combination of a function and it's lexical environment, allowing the function to access variable from it's outer scope even the outer function has finished execution.
+
+Spread Operator :-
+
+- The spread operator (...) in javascript is used to expand element of an array, objects or iterable into individual elements.
+
+- Simply we can say that spread operator allows you to unpack values from arrays or objects.
+
+Higher Order Function :-
+
+- A function that takes another function as an argument or return a function.
+
 React JS :-
 
 - React JS is a frontend javascript library.
@@ -1084,3 +1098,397 @@ File Structure of a React js folder :-
 5. src (source folder) ->
 
 - it is the main source folder where we can create file & write code in it.
+
+6. Public -> Public is used to take our website logo that show publically and we can store images and video in that public folder by creating separate separate folder.
+
+7. node_modules -> auto manages external dependencies that need for execute the project and we can say it is the god father of react js project.
+
+RAFCE -> React Arrow Functional Component Expression
+RFCE -> React Functional Component Expression
+
+Props in React JS :-
+
+- props stands for properties.
+- props are passed to components via HTML attributes.
+
+Practice Question from React JS :- 
+
+1. create a functional component called "Greeting" that takes a "name" prop and display "Hello, <name>!"
+
+expected output -> Hello, Rakesh ! 
+
+2. create a component "userCard" that takes props: name, age & city and display them in a card format. 
+
+expected output -> 
+name : Rakesh 
+Age : 23 
+City : Bhubaneswar
+
+3. create a component Button that accepts a label prop. if no label is passed, it should display "Click Me".
+
+4. create a parent component App that passes a message prop to a child component "MessageBox". The child should display the message. 
+
+expected output -> App -> MessageBox
+
+
+Question 1: Display Even Numbers Using Props
+
+Create a parent component that passes an array of numbers to a child component using props.
+
+const numbers = [12, 15, 20, 33, 44, 51, 60];
+
+Requirements -> 
+Display only even numbers.
+Count how many even numbers are present.
+Show the total sum of even numbers.
+
+Expected Output :-
+
+Even Numbers:
+12
+20
+44
+60
+
+Total Even Numbers: 4
+Sum: 136
+
+___________________________________________________________________________
+Question 2: Student Marks Report
+
+Use the following JSON.
+
+const students = [
+  {id:1,name:"Rahul",marks:78},
+  {id:2,name:"Priya",marks:45},
+  {id:3,name:"Amit",marks:91},
+  {id:4,name:"Riya",marks:33},
+  {id:5,name:"Neha",marks:67}
+];
+
+Requirements -> 
+
+Display all students using map().
+If marks ≥ 50 show
+Pass
+
+otherwise
+
+Fail
+
+Count total pass and fail students.
+__________________________________________________________________________________
+Question 3: Product Discount Calculator
+const products = [
+ {id:1,name:"Laptop",price:60000},
+ {id:2,name:"Phone",price:25000},
+ {id:3,name:"Tablet",price:18000},
+ {id:4,name:"TV",price:55000}
+];
+
+Requirements -> 
+
+Display product name.
+If price > 30000
+Apply 10% discount.
+
+Otherwise
+
+No Discount.
+
+Show final price after discount.
+_______________________________________________________________________________
+
+Question 4: Employee Salary Bonus
+const employees = [
+ {id:1,name:"John",salary:25000},
+ {id:2,name:"David",salary:42000},
+ {id:3,name:"Sam",salary:38000},
+ {id:4,name:"Alex",salary:52000}
+];
+
+Requirements -> 
+
+Display all employees.
+If salary > 40000
+Bonus = 5000
+
+Else
+
+Bonus = 2000
+
+Show Total Salary = Salary + Bonus.
+_________________________________________________________________________________________
+
+Question 5: Shopping Cart Total
+const cart = [
+ {id:1,item:"Shoes",qty:2,price:1500},
+ {id:2,item:"Bag",qty:1,price:1200},
+ {id:3,item:"Watch",qty:3,price:2500}
+];
+
+Requirements -> 
+
+Display item details.
+
+Calculate
+Total = Qty × Price
+Show Grand Total of the cart.
+
+__________________________________________________________________________________
+
+Question 6: Cricket Scores
+const scores = [
+ {player:"Virat",runs:85},
+ {player:"Rohit",runs:120},
+ {player:"Gill",runs:45},
+ {player:"Hardik",runs:65},
+ {player:"Rahul",runs:30}
+];
+
+Requirements -> 
+
+Display all players.
+If runs ≥ 50
+Show "Half Century".
+If runs ≥100
+Show "Century".
+
+Otherwise
+
+Show "Needs Improvement".
+______________________________________________________________________________________
+
+Question 7: Electricity Bill
+const consumers = [
+ {id:1,name:"Ram",units:120},
+ {id:2,name:"Shyam",units:280},
+ {id:3,name:"Rita",units:450},
+ {id:4,name:"Mohan",units:90}
+];
+
+Requirements -> 
+
+Calculate bill.
+
+Units ≤100 → ₹5/unit
+Units 101–300 → ₹7/unit
+Above 300 → ₹10/unit
+
+Display
+
+Name
+Units
+Total Bill
+
+__________________________________________________________________________________________________
+
+Question 8: Voting Eligibility
+const citizens = [
+ {id:1,name:"Rahul",age:18},
+ {id:2,name:"Priya",age:15},
+ {id:3,name:"Rohan",age:23},
+ {id:4,name:"Anita",age:17},
+ {id:5,name:"Neha",age:31}
+];
+
+Requirements -> 
+
+Display all citizens.
+If age ≥18
+Eligible
+
+Else
+
+Not Eligible
+
+Count eligible citizens.
+_____________________________________________________________________________________
+
+Question 9: Student Percentage & Grade
+const result = [
+ {name:"A",marks:450,total:500},
+ {name:"B",marks:380,total:500},
+ {name:"C",marks:250,total:500},
+ {name:"D",marks:180,total:500}
+];
+
+Requirements -> 
+
+Calculate
+
+Percentage = (Marks / Total) × 100
+
+Grade
+
+≥90 → A+
+≥75 → A
+≥60 → B
+≥40 → C
+
+Otherwise → Fail
+
+Display percentage and grade.
+
+_________________________________________________________________________________________________
+
+Question 10: Online Order Summary
+const orders = [
+ {id:101,customer:"Rahul",amount:2500},
+ {id:102,customer:"Priya",amount:700},
+ {id:103,customer:"Rohan",amount:3500},
+ {id:104,customer:"Neha",amount:1200}
+];
+
+Requirements -> 
+
+Display all orders.
+If amount >2000
+Shipping = Free
+
+Else
+
+Shipping = ₹100
+Calculate Final Amount.
+Display total revenue.
+
+
+Reacts Hooks :-
+
+- Hooks allow functions to have access to state & other react features without using classes.
+- they provide dirct API to concept like props, state ,context etc...
+- basically Hook is a function that let us "hook into" react state and lifecycle feature from functional component.
+- there are many types of hooks are there but most used hooks are
+
+1. useState()
+2. useEffect()
+3. useRef()
+4. useMemo()
+5. useContext()
+6. useReducer()
+7. useCallback()
+
+
+1. useState() Hook in React->
+- the react useState() hook allows us to track the state of a functional component.
+
+- state generally refers to data or properties that need to be traacking in an application.
+
+import useState ->
+    import{useState} from 'react'
+
+initialize useState ->
+
+- we initialize our state by calling useState in our function component
+- useState accepts an initial state & return two value.
+    
+    1. the current state
+    2. a function that updates the state
+
+
+syntax -> const [state, setState] = useState("initial value")
+ex -> const[color, setColor] = useColor("red")
+
+
+useState() question ->
+1. toggle button (on/off)
+- create a tooggloe button that toogle between ON /OFF
+- expected output :ON ->oFF -ON
+2. Create a todo list 
+- user can add task
+- tasks are displayed in a list
+- Each task has a delete button
+3. Show/Hide password
+- toogle button (Show/hide)
+- change input type dynamically
+
+useEffect() Hook in react :-
+
+- useEffect is a react hook that lets us perform side effect in functional component, such as...
+    -> fetching data from an API
+    -> updating the DOM
+    -> setting up timer
+    -> adding event listener
+
+- Syntax :-
+
+import {useEffect} from "react";
+
+useEffect(() => {
+    //  add side effects here
+    return () => {
+        //  cleanup code (optional)
+    }
+}, [dependencies]);
+
+1. Runs on Every Render -> 
+
+- if you don't provide any dependency array, the effect runs after every render.
+- Syntax :-
+
+useEffect(() => {
+    console.log("Component rendered")
+})
+
+2. Runs only Once (on Mount)
+
+- pass an empty dependency array[].
+- Syntax :- 
+
+useEffect(() => {
+    console.log("Component Mounted")
+},[]);
+
+3. Runs When Dependency Changes :-
+
+- the effects run only when the "count" changes.
+
+Syntax :-
+
+useEffect(() => {
+    console.log("Component Mounted")
+},[dependency])
+
+4. cleanup function in useEffect :-
+
+- useful for removing event listener, clearing timer etc....
+
+Syntax :-
+
+useEffect(() => {
+    //  add side effects here
+    return () => {
+        //  cleanup code (optional)
+    }
+}, [dependencies]);
+
+
+Solve these questions using useState() hooks :-
+
+1. Complex Form Handling (Object State)
+👉 Build a form with fields:
+
+name
+email
+password
+
+Update all fields using a single useState object
+
+1. Counter with Upper/Lower Limits
+
+👉 Counter should:
+Not go below 0
+Not exceed 10
+
+1. Derived State Problem
+
+👉 Create: Input field for number
+Display its square
+
+Tailwind css:-
+
+- tailwind css basically a utility first css framework.
+- rapidly built modern website without ever laeving our HTML.
+- with utility classes, we can style element different layout basis.
+- it is highly customizable.low level css framework.
+- this css framework packed with classes like flex,pt-4 etc...

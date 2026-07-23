@@ -1,13 +1,18 @@
-import React from 'react'
-
-const UserCard = (props) => {
+function UserCard(props) {
   return (
-    <div>
-      <h3>Name: {props.name}</h3>
-      <h3>Age: {props.Age}</h3>
-      <h3>City: {props.City}</h3>
+    <div
+      style={{
+        border: "1px solid blue",
+        padding: "15px",
+        width: "200px",
+        borderRadius: "5px",
+      }}
+    >
+      <h3>Name : {props.name}</h3>
+      <p>Age : {props.age}</p>
+      <p>City : {props.city}</p>
     </div>
-  )
+  );
 }
 
-export default UserCard
+export default UserCard;
