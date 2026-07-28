@@ -1474,16 +1474,163 @@ password
 
 Update all fields using a single useState object
 
-1. Counter with Upper/Lower Limits
+2. Counter with Upper/Lower Limits
 
 👉 Counter should:
 Not go below 0
 Not exceed 10
 
-1. Derived State Problem
+3. Derived State Problem
 
 👉 Create: Input field for number
 Display its square
+
+Practice Question On useEffect :-
+
+1. Create a component with a button and input field. Print "Component rendered" in console every time component re-renders.
+
+2. Create 2 states ->
+    - count
+    - name
+
+    print -> effect triggered
+
+    - Only when either count or name changes.
+
+3. Create 
+    - One input (text)
+    - One Counter (count)
+
+    - Print "Count effect" only when count changes. Not when typing in input.
+
+4. Create a component where, 
+    - first effect runs only once
+    - second effect runs on every render.
+    - third effect runs only when count changes.
+
+5. Create a login system with a boolean state "isLoggedIn".
+
+    - When user logs in -> print "user Logged In"
+    - when user logs out -> do nothing. 
+
+    - condition -> useEffect should runs only when "isLoggedIn" becomes true. 
+
+Hint -> use dependency [isLoggedIn] & condition inside useEffect
+
+useRef() hooks in react :-
+
+- useRef() is a react hook that let you store a value that does not cause re-render when it changes.
+
+How we use it ->
+
+- it stores a value using .current
+- it does not re-render the component when updated.
+- used for ->
+    - accessing dom element
+    - storing previous value
+
+Practice Question :-
+
+1. Create a component that -> 
+    - has a state count
+    - uses useRef to store the previous value of count
+    - show both :
+        - current count
+        - previous count
+
+2. Create a component that -> 
+    - tracks how many times the component rendered.
+    - use useRef 
+    - display render count in UI
+
+3. Create a component that -> 
+    - start a timer using setInterval
+    - store interval ID using useRef
+    - has 2 button :
+        - start timer 
+        - stop timer
+
+4. Create a component that -> 
+    - display a div
+    - show it's width on screen 
+    - uses useRef() to access DOM
+
+use -> ref.current.offSetWidth
+
+5. Create a component that -> 
+    - display "first render" on first load.
+    - display "updated" on subsequent renders
+
+use -> use boolean ref like : isFirstRender
+
+useMemo() hooks in React JS :-
+
+- useMemo() is a react hook that optimizes preformance by catching (memoization) a value so it doesn't get recalculated on every render.
+- In simple words we can say - only recalculated when needed, otherwise reuse the old value.
+- syntax :-
+
+const memoization = useMemo(() => {
+    //  expensive calculation
+    return result;
+},[dependency]);
+
+- It runs the function when dependency changes.
+- Otherwise, it returns the catched value (memoized value / storage value)
+
+Why we use useMemo() :-
+
+- It prevent unnecessary calculation.
+- Improve preformance
+- useful for heavy computation / calculation
+
+practice Question of useMemo -> 
+
+1. Remove duplicate from list (using useMemo)
+    - create an array with duplicate values. 
+    - arr = [1,2,2,3,4,4,5]
+    - use useMemo to return a unique list
+    - add an input field 
+
+2. Calculate total price 
+    - create a list of product 
+    - cart = [
+        {
+            name: 'Shirt', 
+            price: 500
+        }, 
+        {
+            name: 'Shoose', 
+            price: 1500
+        }, 
+        {
+            name: 'Cap', 
+            price: 300
+        }, 
+    ]
+    - calculate total price using useMemo() 
+    - add a text input
+
+3. Count Even Numbers 
+    - create a large array of numbers (ex. 1 to 10,000)
+    - count how many numbers are even
+    - use useMemo for counting 
+    - add another state (like toggle button)
+
+useCallback() hooks in React JS :-
+
+- useCallback() is a react hook that remember a function so it doesn't get re-created on every render.
+
+Why we use it :-
+
+- In react, every time a component re-render & function are created again.
+- This can cause unncessary re-render in child component.
+- So useCallback helps to prevent that problem.
+
+- syntax :-
+
+const memoizedFunction = useCallback(() => {
+    //  function logic
+},[dependencies]);
 
 Tailwind css:-
 
@@ -1492,3 +1639,4 @@ Tailwind css:-
 - with utility classes, we can style element different layout basis.
 - it is highly customizable.low level css framework.
 - this css framework packed with classes like flex,pt-4 etc...
+
