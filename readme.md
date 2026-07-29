@@ -1632,6 +1632,40 @@ const memoizedFunction = useCallback(() => {
     //  function logic
 },[dependencies]);
 
+useContext hooks in React :-
+
+1. Language Switcher ->
+    - Create a context for language (English, Hindi, etc...)
+        - add a button to switch language.
+        - change displayed text based on selected language.
+
+2. Shopping Cart Count ->
+    - Create a CartContext to store cart items count
+        - add "add to cart" button
+        - displayed total item in nav-bar
+
+3. Nested Component without Props ->
+    - Create 3 components: APP -> Parent -> Child
+        - Pass data using useContext instead of props
+        - display data in child
+        - Avoid prop drilling
+
+useReducer() hooks in React JS :-
+
+- useReducer() is a react hook used to manage complex state logics.
+- we can say it is the powerful version of useState.
+- best to use, When ->
+    - State has multiple values.
+    - logic is complex.
+    - Many action changes the state.
+
+- Syntax :-
+
+const [state, dispatch] = useReducer(reducer, initialState);
+
+- where, state -> current value
+        dispatch -> function to send action
+        reducer -> function that updates the state
 Tailwind css:-
 
 - tailwind css basically a utility first css framework.
