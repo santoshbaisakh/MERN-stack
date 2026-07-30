@@ -20,6 +20,8 @@ import HeavyCalc from './react_hooks/useMemo/HeavyCalc';
 import FIlteringListEfficiently from './react_hooks/useMemo/FIlteringListEfficiently';
 import Counter from './react_hooks/useCallback/Counter';
 import PreventChildReRender from './react_hooks/useCallback/PreventChildReRender';
+import VirtualDom from './VirtualDom';
+import AxiosExample from './AxiosExample';
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
       <FIlteringListEfficiently />
       <Counter />
       <PreventChildReRender />
+      <VirtualDom />
+      <AxiosExample />
     </div>
   );
 }

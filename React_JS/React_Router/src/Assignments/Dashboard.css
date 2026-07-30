@@ -1,0 +1,14 @@
+.dashboard {
+    background: #f3e5f5;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.dashboard h1 {
+    color: #6a1b9a;
+}
+
+.dashboard p {
+    font-size: 20px;
+}

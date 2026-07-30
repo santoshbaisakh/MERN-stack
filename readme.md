@@ -1634,6 +1634,8 @@ const memoizedFunction = useCallback(() => {
 
 useContext hooks in React :-
 
+Practice Question on useContext() :-
+
 1. Language Switcher ->
     - Create a context for language (English, Hindi, etc...)
         - add a button to switch language.
@@ -1666,6 +1668,78 @@ const [state, dispatch] = useReducer(reducer, initialState);
 - where, state -> current value
         dispatch -> function to send action
         reducer -> function that updates the state
+
+1. Counter with Multiple Actions
+Create a counter using useReducer with actions:
+Increment
+Decrement
+Reset
+👉 Goal: Understand basic reducer logic
+
+2. Todo List with Reducer
+Build a Todo app using useReducer:
+Add task
+Delete task
+Mark as completed
+👉 Goal: Manage array state with actions
+
+3. Form State Management
+Create a form with fields: name, email, password
+Update each field using reducer
+Reset form on submit
+👉 Goal: Handle multiple inputs in one state
+
+4. Shopping Cart System
+Create a cart using useReducer:
+Add item
+Remove item
+Increase / decrease quantity
+👉 Goal: Real-world state management
+
+5. Toggle Theme (Light/Dark)
+Use useReducer to switch themes
+Toggle between light & dark mode
+👉 Goal: Simple global-like state logic
+
+Virtual DOM in React JS :-
+
+- Virtual DOM is a lightweight copy of the real DOM.
+- like we can say ->
+    - real DOM -> Actual House
+    - Virtual DOM -> a blueprint (copy of the house)
+
+Process of the virtual DOM :-
+
+- Instead of changing the real DOM every time, react uses virtual DOM for 
+    - updating the virtual dom
+    - compares it with the previous version
+    - changes only the necessary parts in real dom.
+
+Why virtual DOM is useful ?
+
+- faster update
+- efficient rendering
+- avoid unnecessary full page reload
+- improve performance
+
+React Router DOM in React JS :-
+
+- React router dom is a library used in react to handle navigation between pages without reloading the whole website.
+- take a example ->
+    - /home
+    - /about
+    - /contact
+
+- react router lets you switch between these pages without refreshing the page.
+
+Axios in React JS :-
+
+- Axios is a popular javascript library used to make HTTP request (API call) from the browser.
+    - it helps you fetch data from API's
+    - works with GET, POST, PUT, PATCH, DELETE
+    - Return data in a clean json format
+    - mainly easier than fetch()
+
 Tailwind css:-
 
 - tailwind css basically a utility first css framework.
