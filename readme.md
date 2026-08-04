@@ -1748,5 +1748,8 @@ Tailwind css:-
 - it is highly customizable.low level css framework.
 - this css framework packed with classes like flex,pt-4 etc...
 
-npm install -D tailwindcss@3 postcss autoprefixer:- installing tailwindcss
-npx tailwindcss init -p
+Installing tailwindcss:-
+- npm install -D tailwindcss@3 postcss autoprefixer
+
+Initialization:-
+- npx tailwindcss init -p
