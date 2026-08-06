@@ -2,21 +2,26 @@ import logo from "../assets/logo.png";
 
 function Navbar() {
   return (
-    <nav className="max-w-6xl mx-auto flex justify-between items-center py-6 px-4">
+    <header className="max-w-6xl mx-auto flex justify-between items-center py-6 px-4">
 
-      <img
-        src={logo}
-        alt="logo"
-        className="w-20"
-      />
+      <div>
+        <img
+          src={logo}
+          alt="Logo"
+          className="w-20"
+        />
+      </div>
 
-      <ul className="flex gap-12 font-semibold">
-        <li className="cursor-pointer hover:text-red-500">
+      <nav>
+        <a
+          href="#"
+          className="font-bold text-black hover:text-red-500 duration-300"
+        >
           Home
-        </li>
-      </ul>
+        </a>
+      </nav>
 
-    </nav>
+    </header>
   );
 }
 
